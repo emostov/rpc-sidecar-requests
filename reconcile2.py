@@ -60,7 +60,6 @@ def value_transferred_in_block(block: dict, address: str):
 		value_transferred += value_reaped(xt['events'])
 	return value_transferred
 
-
 def value_reaped(events):
 	reaped = 0
 	for event in events:
@@ -69,8 +68,7 @@ def value_reaped(events):
 	return reaped
 
 
-def isFeeMethod(m: str):
-	return m == 'balances.transferKeepAlive' or m == 'balances.transfer'
+
 
 
 def main():
